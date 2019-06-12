@@ -6,6 +6,10 @@ NLP2 = tokenizer, stopwords, stemming, lemmas
 NLP3 = bag of words, TF-IDF
 # NLP4
 NLP4 = Ngram for charcaters and words
+# NLP5
+NLP5 = N-gram Modelling , word modellinf, character modelling
+# NLP6
+NLP6 = wordnet, word negation ,finding synonyms of words, antonyms of words
 # Text Classifier
 Text classifier = x.pickle, y.pickle, classifier.pickle, tfidf.pickle fiels are pickle file made in text classificatio.ipynb file
 # Sentimental Analysis
