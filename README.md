@@ -14,3 +14,5 @@ NLP6 = wordnet, word negation ,finding synonyms of words, antonyms of words
 Text classifier = x.pickle, y.pickle, classifier.pickle, tfidf.pickle fiels are pickle file made in text classificatio.ipynb file
 # Sentimental Analysis
 sentimental analysis = Twitter sentimental analysis using pickel files i.e. classifeir.pickel and tfidf.pickel, fetchinglive data from twiter and checking whether it is positive or negative data. also used tweepy.api 
+# Text Summariztion 
+summarize any text for  webpage of praragraph tag
