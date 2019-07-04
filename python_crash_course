@@ -1,0 +1,573 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "heelo world\n"
+     ]
+    }
+   ],
+   "source": [
+    "#basic tutorials about\n",
+    "print(\"heelo world\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12  this is tweleve 12.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 12\n",
+    "b = \" this is tweleve\"\n",
+    "c = 12.5\n",
+    "print(a,b,c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n",
+      "30\n",
+      "10\n",
+      "50\n",
+      "100\n",
+      "hello\n",
+      "world\n"
+     ]
+    }
+   ],
+   "source": [
+    "num1 = 10\n",
+    "num2 = 20\n",
+    "print(num1+num2)\n",
+    "print(num1^num2)\n",
+    "print(num1 % num2)\n",
+    "print(num1*5)\n",
+    "print(num1**2)\n",
+    "print('hello')\n",
+    "print('world')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello world\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('hello',end=' ')\n",
+    "print('world')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "c is greater than a\n"
+     ]
+    }
+   ],
+   "source": [
+    "#condition\n",
+    "if(a>c):\n",
+    "    print('a is greater than b')\n",
+    "elif(c>a):\n",
+    "    print(\"c is greater than a\")\n",
+    "else:\n",
+    "    print('equal')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,11):\n",
+    "    i = i + 1\n",
+    "    if(i==8):\n",
+    "        break\n",
+    "    if (i==5):\n",
+    "        continue\n",
+    "    \n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#pass is a keyword simply a null statement\n",
+    "i = 8\n",
+    "if(i==8):\n",
+    "    pass\n",
+    "else:\n",
+    "    print(\"ok\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "string\n",
+      "['i am first', 1, 2, 3.8, 'string', 50]\n",
+      "['i am first', 20, 3.8, 'string']\n",
+      "4\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "['i am first', 20, 3.8, 'string']\n",
+      "i am first\n",
+      "20\n",
+      "3.8\n",
+      "string\n"
+     ]
+    }
+   ],
+   "source": [
+    "#datastructures\n",
+    "#list\n",
+    "listt = [1,2,3.8,'string']\n",
+    "print(listt[3])\n",
+    "listt.append(50)\n",
+    "listt.insert(0,\"i am first\")\n",
+    "print(listt)\n",
+    "listt[1] = 20\n",
+    "\n",
+    "listt.pop()\n",
+    "\n",
+    "del listt[2]\n",
+    "print(listt)\n",
+    "\n",
+    "print(len(listt))\n",
+    "\n",
+    "for index in range(0,len(listt)):\n",
+    "    print(index)\n",
+    "#    listt[index] = 11\n",
+    "print(listt)\n",
+    "\n",
+    "for item in listt:\n",
+    "    print(item)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(12, 'this is string 2', 3.5)\n",
+      "3.5\n",
+      "(1, 2, 3, 2, 3, 4, 5, 7, 8, 'ok')\n",
+      "12\n",
+      "this is string 2\n",
+      "3.5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#tuple\n",
+    "#its a constant\n",
+    "\n",
+    "#why ,  because its helps helps to tell python interpreter that it is tipple not a int\n",
+    "tuplee = (12,)\n",
+    "tuplee = (12,\"this is string 2\", 3.5)\n",
+    "\n",
+    "print(tuplee)\n",
+    "print(tuplee[2])\n",
+    "t1 = (1,2,3)\n",
+    "t2 = (2,3,4)\n",
+    "t3 = (5,7,8,\"ok\")\n",
+    "print(t1+t2+t3)\n",
+    "\n",
+    "\n",
+    "for i in range(0,len(tuplee)):\n",
+    "    print(tuplee[i])\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'apple': 'this is a apple', 'orange': 'this is a orange', 'ball': 'this is a ball', 'house': 'this is a house', 'car': 'this is a car'}\n",
+      "this is a car\n",
+      "this is a apple\n",
+      "key doesnot exist\n",
+      "0 :\n",
+      "1 :\n",
+      "2 :\n",
+      "3 :\n",
+      "4 :\n",
+      "{'orange': 'this is a orange', 'ball': 'this is a ball', 'house': 'this is a house', 'car': 'this is a car'}\n",
+      "4\n",
+      "['orange', 'ball', 'house', 'car']\n",
+      "['this is a orange', 'this is a ball', 'this is a house', 'this is a car']\n",
+      "orange : this is a orange\n",
+      "ball : this is a ball\n",
+      "house : this is a house\n",
+      "car : this is a car\n"
+     ]
+    }
+   ],
+   "source": [
+    "#datastructure\n",
+    "\n",
+    "dic ={}\n",
+    "\n",
+    "dic['apple'] = 'this is a apple'\n",
+    "dic['orange'] = 'this is a orange'\n",
+    "dic['ball'] = 'this is a ball'\n",
+    "dic['house'] = 'this is a house'\n",
+    "dic['car'] = 'this is a car'\n",
+    "print(dic)\n",
+    "print(dic['car'])\n",
+    "print(dic.get('apple'))\n",
+    "print(dic.get('mistake',\"key doesnot exist\"))\n",
+    "for i in range(0,len(dic)):\n",
+    "    print(i,\":\")\n",
+    "#    print(dic.get)\n",
+    "\n",
+    "del dic[\"apple\"]\n",
+    "print(dic)\n",
+    "\n",
+    "print(len(dic))\n",
+    "\n",
+    "listofkeys = list(dic.keys())\n",
+    "print(listofkeys)\n",
+    "\n",
+    "listofvalues = list(dic.values())\n",
+    "print(listofvalues)\n",
+    "\n",
+    "for key in dic.keys():\n",
+    "    print(key,\":\",end= ' ')\n",
+    "    print(dic[key])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#function\n",
+    "def functionn(a1,a2):\n",
+    "    print(a1,a2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "functionn(1,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "17.9"
+      ]
+     },
+     "execution_count": 100,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def sum(a1,a2):\n",
+    "    c = a1 + a2\n",
+    "    return(c)\n",
+    "\n",
+    "sum(8,9.9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def length(l):\n",
+    "    count = 0\n",
+    "    for i in l:\n",
+    "        count += 1\n",
+    "       \n",
+    "    print(count)\n",
+    "\n",
+    "print(length([1,2,3]))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 135,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "fish can swim\n",
+      "fish can eat\n"
+     ]
+    }
+   ],
+   "source": [
+    "#class and object\n",
+    "\n",
+    "class fish:\n",
+    "    def __int__(self):\n",
+    "       \n",
+    "        print(\"this is a constructor\")\n",
+    "    \n",
+    "    def swim(self):\n",
+    "        print(\"fish can swim\")\n",
+    "    def eat(self):\n",
+    "        print(\"fish can eat\")\n",
+    "        \n",
+    "f1 = fish()\n",
+    "f1.swim()\n",
+    "f1.eat()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class game:\n",
+    "    def __int__(self, name):\n",
+    "        self.name = name\n",
+    "        print(\"this is a constructor\")\n",
+    "    def start(self):\n",
+    "        print(self.name,\"has started\")\n",
+    "    def stop(self):\n",
+    "        print(self.name,\"has stopped\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'self' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-139-11141c733004>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mg1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mgame\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m'fifa'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mg1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstart\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'self' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "g1 = game(self,'fifa')\n",
+    "g1.start()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 156,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4, 55, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 55, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4]\n",
+      "[2, 4, 55, 6, 8]\n",
+      "[4, 8, 110, 12, 16]\n",
+      "[1, 3, 55, 7, 9]\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 4, 55, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 156,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#list comprehesion\n",
+    "\n",
+    "num = [1,2,3,4,55,6,7,8,9]\n",
+    "\n",
+    "numrs = []\n",
+    "for number in num:\n",
+    "   \n",
+    "    numrs.append(number)\n",
+    "print(numrs)\n",
+    "\n",
+    "numrss = [number for number in num]\n",
+    "print(numrss)\n",
+    "\n",
+    "numrss = [number for number in num if number<=5]\n",
+    "print(numrss)\n",
+    "\n",
+    "num2 =[1,3,5,7,9]\n",
+    "numrss = [number for number in num if number not in num2]\n",
+    "print(numrss)\n",
+    "\n",
+    "numrss = [number*2 for number in num if number not in num2]\n",
+    "print(numrss)\n",
+    "\n",
+    "numrss = [number for number in num if number%2 == 1]\n",
+    "print(numrss)\n",
+    "\n",
+    "numrss = (number**2 for number in num)\n",
+    "list(numrs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 168,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i love you\n",
+      "i ok love ok you\n"
+     ]
+    }
+   ],
+   "source": [
+    "#dic comprehension\n",
+    "\n",
+    "dic ={\"apple\":1,\"orange\":2,\"banana\":3}\n",
+    "\n",
+    "\n",
+    "newdic = {key:dic[key] for key in dic.keys()}\n",
+    "newdic\n",
+    "\n",
+    "newdic = {key:dic[key] for key in dic.keys() if dic[key]>2}\n",
+    "newdic\n",
+    "\n",
+    "words = [\"i\",\"love\",\"you\"]\n",
+    "\n",
+    "sentence = ' '.join(words)\n",
+    "print(sentence)\n",
+    "\n",
+    "sentence = ' ok '.join(words)\n",
+    "print(sentence)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
