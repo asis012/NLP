@@ -1,3 +1,6 @@
+#Python Crash Course
+visit python crash file if you dont have good knowledge about python
+
 # NLP1
 NLP1 = pandas, numpy, regexpression 
 # NLP2
